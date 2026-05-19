@@ -44,7 +44,7 @@ $result = mysqli_query($conn, $sql);
                         <td><?= $row['text1']; ?></td>
                         <td><?= $row['date']; ?></td>
                         <td> <a href="edit.php?id=<?= $row['id']; ?>" class="btn btn-primary">Edit</a>
-                        <a href="dellete.php?id=<?= $row['id']; ?>" class="btn btn-secondary">Dellete</a></td>
+                        <a href="dellete.php?id=<?= $row['id']; ?>" class="btn btn-secondary"  onclick="return confirm('Are you sure?')">Dellete</a></td>
                         </tr>
 
                         <?php endwhile; ?>
